@@ -232,11 +232,14 @@ int main()
          }
          else if (choose == 2) {
              phrase.enterPhrase();
-             std::cout << "Введите ключ.";
+             std::cout << "Как пример можно использовать слово -) \".-$\" \n";
+             std::cout << "Введите ключ.\n";
              std::cout << "Число- ";
              std::cin >> key;
+             std::cout << "\n";
              std::cout << "Буквы(латинские)- ";
              std::cin >> ckey;
+             std::cout << "\n";
              phrase.onlyDecoder(key, ckey);
              phrase.decoderResult(phrase.m_returnPhrase);
              start = false;
