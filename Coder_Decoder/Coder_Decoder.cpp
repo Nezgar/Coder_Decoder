@@ -6,13 +6,15 @@
    ========================================= =========================================*/
 
 class Enigma {
+protected:
+    int m_key{ 4541 };                  //номер ключа
+    char m_ckey{ 'A' };                   //буква ключа
+
 public:
     std::string m_phrase = "";
     std::vector<int> m_position;
     std::string m_shakePhrase = "";
     std::string m_returnPhrase = "";
-    int m_key{ 4541 };                  //номер ключа
-    char m_ckey{'A'};                   //буква ключа
     void coder(std::string &m_phrase, std::vector<int> &m_position, std::string &m_shakePhrase);
     
     void enterPhrase();
